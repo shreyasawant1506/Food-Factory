@@ -1,0 +1,78 @@
+<div class="row">
+  <div class="col-sm-12">
+    <form [formGroup]="menuForm" (ngSubmit)="onSubmit()">
+       <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text"
+          class="form-control"
+          id="name"
+          formControlName="name"
+          >
+        </div>
+        <div class="form-group">
+          <label for="image">ImagePath</label>
+          <input type="text"
+          class="form-control"
+          id="image"
+          formControlName="image">
+        </div>
+        <div class="form-group">
+          <label for="name">Description</label>
+          <textarea type="text"
+          class="form-control"
+          id="description"
+          row="6"
+          formControlName="description"></textarea>
+        </div>
+      </div>
+    </div>
+
+
+<div class="row">
+  <div class="col-sm-12" formArrayName="ingredients">
+    <div class="row" 
+    *ngFor="let ingredientCtrl of menuForm.get('ingredients'); let i=index"
+   [formGroupName]="i">
+     <div class="col-sm-8">
+         
+            <input type="text"
+            class="form-control"
+            id="name"
+           formControlName="name" >
+      </div>
+              <div class="col-sm-2">
+                    <input type="text"
+                    class="form-control"
+                    id="amount"
+                    formControlName="amount">
+              </div>
+              <div class="col-sm-2">
+                 <button class="btn btn-danger"
+                 (click)="onDeleteIngredient()">X</button>
+               </div>
+              </div>
+              <hr>
+      <div class="row">
+        <div class="col-sm-5">
+        <button 
+        type="button"
+        class="btn btn-success" (click)="addnewIngredient()">Add Ingredient</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-sm-12">
+      <div class="row">
+<button class="btn btn-success">Save</button>
+<button class="btn btn-danger" (click)="onCancel()">Cancel</button>
+</div>
+</div>
+   
+  
+    </form>
+  </div>
+</div>
+

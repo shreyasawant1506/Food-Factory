@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <app-foodlist></app-foodlist>
+    </div>
+    <div class="col-md-7">
+      <router-outlet></router-outlet>
+      <!-- <app-fooddetail
+       *ngIf="selectedMenu;else infoText"
+      [menu]="selectedMenu" 
+      ></app-fooddetail>
+      <ng-template #infoText>
+        <p>Create your own Combo Meal</p>
+
+        </ng-template> -->
+    </div>
+  </div>
+<!-- <div class="row">
+  <div class="col-sm-5">
+    <app-orderlist></app-orderlist>
+  </div>
+</div> -->
+</div>
+

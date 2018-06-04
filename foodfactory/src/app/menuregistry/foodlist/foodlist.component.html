@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12">
+      <button class="btn btn-success" (click)="AddNewCombo()">Add new meal item</button>
+   
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12" 
+  style="cursor: pointer">
+    
+    <app-fooditem 
+    *ngFor="let menuItem of menus; let i=index"
+    [menu]="menuItem"
+    [index]="i"></app-fooditem>
+    </div>
+    </div>
+      
+
+
+
