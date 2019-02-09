@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-    "bootstrap": ">=3.4.0",
+   
     "core-js": "^2.4.1",
     "firebase": "^5.0.2",
     "rxjs": "^5.5.6",
@@ -45,6 +45,16 @@
     "protractor": "~5.1.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
-    "typescript": "~2.5.3"
+    "typescript": "~2.5.3",
+    "lodash": ">=4.17.11"
+    "extend": ">=3.0.2"
+    "cryptiles": ">=4.1.2"
+    "url-parse": ">=1.4.3"
+    "adm-zip": ">=0.4.11"
+    "https-proxy-agent": ">=2.2.0"
+    "webpack-dev-server": ">=3.1.11"
+    "bootstrap": ">=3.4.0"
+    "randomatic": ">=3.0.0"
+    "protobufjs": ">=5.0.3"
   }
 }
